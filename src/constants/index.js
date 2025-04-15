@@ -53,22 +53,7 @@ const logoIconsList=[
   },
   {
     imgPath: "/images/logos/company-logo-6.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-7.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-8.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-9.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-10.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-11.png",
-  },
+  }
 ];
 
 const abilities=[
@@ -110,54 +95,92 @@ const techStackImgs=[
 
 const techStackIcons=[
   {
-    name: "React Developer",
-    modelPath: "/models/react_logo-transformed.glb",
-    scale: 1,
-    rotation: [0,0,0],
-  },
-  {
-    name: "Backend Developer",
+    name: "JavaScript / TypeScript",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0,-Math.PI/2,0],
   },
   {
-    name: "Interactive Developer",
+    name: "ReactJS / NextJS",
+    modelPath: "/models/react_logo-transformed.glb",
+    scale: 1,
+    rotation: [0,-Math.PI/2,0],
+  },
+  {
+    name: "HTML5 / CSS3 / Tailwind",
+    modelPath: "/models/html5_logo.glb",
+    scale: 1,
+    rotation: [1,-Math.PI/1,0],
+  },
+  {
+    name: "Ant Design / Mantine UI / MUI",
     modelPath: "/models/three.js-transformed.glb",
+    scale: 1.5,
+    rotation: [0,Math.PI/2,0],
+  },
+  {
+    name: "Redux / Zustand / React Query",
+    modelPath: "/models/three.js-transformed.glb",
+
+    scale: 1,
+    rotation: [0,Math.PI/4,0],
+  },
+
+  {
+    name: "Agile Methodologies",
+    modelPath: "/models/three.js-transformed.glb",
+    scale: 0.05,
+    rotation: [0,Math.PI/2,0],
+  },
+
+  {
+    name: "Git / Bitbucket / Jira",
+    modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0,0,0],
   },
   {
-    name: "Project Manager",
-    modelPath: "/models/git-svg-transformed.glb",
+    name: "Micro Frontend",
+    modelPath: "/models/three.js-transformed.glb",
     scale: 0.05,
-    rotation: [0,-Math.PI/4,0],
+    rotation: [0,Math.PI/2,0],
   },
+  {
+    name: "Team Work",
+    modelPath: "/models/three.js-transformed.glb",
+    scale: 0.05,
+    rotation: [0,Math.PI/2,0],
+  },
+
 ];
 
 const expCards=[
   {
-    review: "Kiet’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
+    review: "Kiet is a dedicated and skilled developer. He approaches challenges with a problem-solving mindset.",
+    imgPath: "/images/logos/company-logo-6.png",
+    logoPath: "/images/logo-2.png",
     title: "Full Stack Developer",
-    date: "January 2025 - Present",
+    date: "March 2025 - Present",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
+      "Developed and maintained the frontend of the React website.",
       "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Built responsive and interactive user interfaces.",
     ],
   },
   {
     review: "Kiet brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
+    imgPath: "/images/c2c.png",
+    logoPath: "/images/c2c-1.png",
     title: "Frontend Developer",
-    date: "March 2020 - December 2024",
+    date: "March 2020 - February 2025",
     responsibilities: [
-      "Developed and maintained user-facing features for the React website.",
+      "Developed and maintained user-facing features for the company's web applications.",
       "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
       "Optimized web applications for maximum speed and scalability.",
+      "Implemented responsive design to ensure optimal performance across various devices.",
+      "Ensured cross-browser compatibility and accessibility.",
+      "Conducted code reviews and provided feedback to other developers.",
+      "Good problem-solving skills and ability to work under pressure.",
     ],
   },
 
@@ -197,7 +220,7 @@ const testimonials=[
     name: "Thảo Nguyễn",
     mentions: "@ThaoNguyen",
     review:
-      "Collaborating with Kiet was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Kiet's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Kiet was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Kiet's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Kiet is the ideal partner.",
     imgPath: "/images/client3.jpg",
   },
   {
@@ -205,7 +228,7 @@ const testimonials=[
     mentions: "@VuongNguyen",
     review:
       "Kiet was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
-    imgPath: "/images/client4.png",
+    imgPath: "/images/client4.jpg",
   },
   {
     name: "Hiền Nhi",
@@ -220,18 +243,22 @@ const socialImgs=[
   {
     name: "insta",
     imgPath: "/images/insta.png",
+    link: "https://www.instagram.com/anhkiet_102/",
   },
   {
     name: "fb",
     imgPath: "/images/fb.png",
+    link: "https://www.facebook.com/anhkietpham.76",
   },
   {
-    name: "x",
-    imgPath: "/images/x.png",
+    name: "github",
+    imgPath: "/images/github.png",
+    link: "https://github.com/kietpham102",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    link: "https://www.linkedin.com/in/kiet-pham-anh/",
   },
 ];
 

@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import { navLinks } from "../constants";
 
 const NavBar = () => {
   // track if the user has scrolled down the page
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   useEffect(() => {
     // create an event listener for when the user scrolls
@@ -25,28 +28,51 @@ const NavBar = () => {
   return (
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
-        <a href="#hero" className="logo">
-          Kiet Pham
-        </a>
+        {isHomePage ? (
+          <a href="#hero" className="logo">
+            Kiet Pham
+          </a>
+        ) : (
+          <Link to="/" className="logo">
+            Kiet Pham
+          </Link>
+        )}
 
         <nav className="desktop">
           <ul>
-            {navLinks.map(({ link, name }) => (
-              <li key={name} className="group">
-                <a href={link}>
-                  <span>{name}</span>
+            {isHomePage ? (
+              navLinks.map(({ link, name }) => (
+                <li key={name} className="group">
+                  <a href={link}>
+                    <span>{name}</span>
+                    <span className="underline" />
+                  </a>
+                </li>
+              ))
+            ) : (
+              <li className="group">
+                <Link to="/">
+                  <span>Home</span>
                   <span className="underline" />
-                </a>
+                </Link>
               </li>
-            ))}
+            )}
           </ul>
         </nav>
 
-        <a href="#contact" className="contact-btn group">
-          <div className="inner">
-            <span>Contact me</span>
-          </div>
-        </a>
+        {isHomePage ? (
+          <a href="#contact" className="contact-btn group">
+            <div className="inner">
+              <span>Contact me</span>
+            </div>
+          </a>
+        ) : (
+          <Link to="/" className="contact-btn group">
+            <div className="inner">
+              <span>Back to Home</span>
+            </div>
+          </Link>
+        )}
       </div>
     </header>
   );

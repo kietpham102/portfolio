@@ -51,7 +51,7 @@ const Hero = () => {
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I'm Kiet Pham, a software developer based in Vietnam. For me, code isn't just a job; it's a passion for solving problems and building effective solutions.".
+              Hi, I'm Kiet Pham, a software developer based in Vietnam. For me, code isn't just a job; it's a passion for solving problems and building effective solutions.
             </p>
 
             <Button
